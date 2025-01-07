@@ -57,7 +57,7 @@ vector<pair<pair<int, int>, int>> calculatePrimsMST(int n, int m, vector<pair<pa
         // Step 5 & 6: Update adjacent nodes
         for (auto it : adj[u]) {
             int v = it.first;
-            int w = it.second; // Corrected from `it.first` to `it.second`
+            int w = it.second; 
 
             if (!mst[v] && w < key[v]) {
                 parent[v] = u;
